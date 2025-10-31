@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mayank Sharma-Login Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="../mayank.jfif" type="image/x-icon">
+  <style>
+
+    /* Reset and basic styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;   
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body, html {
+      height: 100%;
+     
+     
+      overflow: hidden; 
+      background-color: #333;
+        
+     }
+    
+    /* Background Image */
+    body {
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      animation: color 5s  0s infinite normal ;
+    }
+
+    @keyframes color   {
+        0%{background-color: #cef377;}
+        10%{background-color: #ecc3b5;}
+        20%{background-color: #14939c;}
+        30%{background-color: #7b2ce2;}
+        40%{background-color: #eb832e;}
+        50%{background-color: #94ec6b;}
+        60%{background-color:rgb(229, 101, 255)7;}
+        70%{background-color:rgb(201, 218, 154)7;}
+        80%{background-color:rgba(238, 9, 9, 0.418)7;}
+        90%{background-color:rgba(28, 233, 147, 0.616)7;}
+        100%{background-color:rgb(14, 247, 255)7;}
+    }
+
+    /* Overlay for darker effect */
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+
+    /* Login container */
+    .login-container {
+      position: relative;
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 40px 50px;
+      border-radius: 15px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+      width: 350px;
+      text-align: center;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    /* Heading */
+    .login-container h2 {
+      margin-bottom: 30px;
+      color: #333;
+      animation: slideDown 1s ease forwards;
+    }
+
+    /* Input fields */
+    .login-container input {
+      width: 100%;
+      padding: 12px 15px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    .login-container input:focus {
+      border-color: #4caf50;
+      box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+    }
+
+    /* Login button */
+    .login-container button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #4caf50, #81c784);
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .login-container button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes slideDown {
+      from {opacity: 0; transform: translateY(-30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    /* Subtle floating effect on background */
+    body::after {
+      content: '';
+      position: absolute;
+      top: -50px; left: -50px;
+      width: 200%;
+      height: 200%;
+      background: inherit;
+      filter: blur(30px);
+      animation: floatBG 20s linear infinite;
+      z-index: 0;
+    }
+
+    @keyframes floatBG {
+      0% {transform: translate(0,0);}
+      50% {transform: translate(-20px, 20px);}
+      100% {transform: translate(0,0);}
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Welcome Back</h2>
+    <form>
+      <input id="email" type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>

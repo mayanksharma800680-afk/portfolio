@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+main {
+  height: 640px;
+  width: 100vw;
+  /* background: url('assets/images/bg.jpg') no-repeat center center/cover ; */
+  position: relative;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5) ;
+
+}
+
+.main-back-img{
+    height: 640px;
+  width: 100vw;
+  background: url("../assets/images/bg.jpg") no-repeat center center/cover ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2) ;
+}
+
+nav {
+  /* height: 100px;
+  width: 100vw; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    padding: 3vh 5vw;
+}
+.nav-1 img {
+  width: 130px;
+  /* margin: 3vh 5vw; */
+}
+
+.nav-2 {
+  margin-right: 5%;
+  display: flex;
+}
+.nav-2 div {
+  margin-left: 10px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: 1px solid white;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+.nav-2 div:hover {
+  background-color: rgba(146, 140, 140, 0.5);
+  border: 1px solid red;
+}
+
+.sign-in{
+    background-color: red;
+    border: none;
+    color: white;
+}
+
+.sign-in a{
+    text-decoration: none;
+    color: white;
+}
+
+.main-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.main-content h1 {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+  width: 70vw;
+  font-weight: bolder;
+  font-family: zalondo, sans-serif;
+}
+
+.main-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  width: 70vw;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.96);
+}
+
+.main-content p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 70vw;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.96);
+}   
+
+.main-content input {
+  padding: 10px;
+  
+  width: 35%;
+  font-size: 0.8rem;
+  background-color: #110f0fd2;
+  border: 1px solid rgba(255, 255, 255, 0.733);
+  border-radius: 4px;
+  outline: none;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    
+
+}
+.input-field input{
+    /* margin-bottom: 20px; */
+    text-align: center;
+    color: white;
+    font-size: 1.4rem;
+    width: 70vw;
+}
+
+.main-content button {
+  padding: 10px 25px;
+  font-size: 1.1rem;
+  background-color: red;
+  border: 1px solid white;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+    margin-top: 20px;
+}   
+
+
+
+/* section 1 start */
+.section-1{
+    height: 550px;
+    width: 100vw;
+    background-color: black;
+    color: white;
+   position: absolute;
+   top: 640px;
+   border-top: 10px solid #222;
+}
+
+.section-1-content{
+    /* text-align: start; */
+    padding: 40px 15%;
+}
+
+.section-1-content h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    font-family: zalondo, sans-serif;
+}
+.section-1-content h3{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.96);
+}
+
+.section-1-img{
+    width: 305px;
+    /* width: 100%; */
+     /* display: flex;  
+    justify-content: center; */
+    /* align-items: center; */
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+    
+}
+
+.section-1-img img{
+    width: 100%;
+}
+
+.section-1-img video{
+    width: 74%;
+    object-fit: cover;
+    z-index: -2;
+    scale: 1.15;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+
+
+/* section 1 end */
+/* section 2 start */
+
+
+.section-2{
+    height: 550px;
+    width: 100vw;
+    /* background: url('https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg') no-repeat center center/cover ; */
+    position: relative;
+    top: 1095px;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5) ;
+    border-top: 10px solid #222;
+    background-color: black;
+}
+
+.section-2 img{
+    width: 300px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+}
+.section-2 h1{
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    transform: translate(-45%, -80%);
+    font-size: 3.5rem;
+    width: 70vw;
+    text-align: start;
+    font-weight: bolder;
+    font-family: zalondo, sans-serif;
+    color: white;
+}
+
+.section-2 p{
+    position: absolute;
+    top: 92%;
+    left: 45%;
+    transform: translate(-45%, -92%);
+    font-size: 2rem;
+    width: 70vw;
+    text-align: start;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.96);
+}
+
+
+/* section 2 end */
+/* section 3 start */ 
+  
+  .section-3{
+      height: 550px;
+      width: 100vw;
+      /* background: url('https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png') no-repeat center center/contain ; */
+      position: relative;
+      top: 1095px;
+      box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5) ;
+      border-top: 10px solid #222;
+      background-color: black;
+      color: white;
+  }
+
+  .section-3 h1{
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -10%);
+      font-size: 3.5rem;
+      width: 70vw;
+      text-align: start;
+      font-weight: bolder;
+      font-family: zalondo, sans-serif;
+      color: white;
+  }
+
+  .section-3 p{
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%, -25%);
+      font-size: 2rem;
+      width: 70vw;
+      text-align: start;
+      font-weight: normal;
+      color: rgba(255, 255, 255, 0.96);
+  }
+
+  
+.section-3-img{
+    width: 305px;
+    /* width: 100%; */
+     /* display: flex;  
+    justify-content: center; */
+    /* align-items: center; */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translatex(-50%);
+    
+}
+
+.section-3-img img{
+    width: 100%;
+}
+
+.section-3-img video{
+    width: 74%;
+    object-fit: cover;
+  z-index: -2;
+  scale: 1.15;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+/* section 3 end */
+/* section 4 start */
+
+.section-4{
+    height: 550px;
+    width: 100vw;
+    position: relative;
+    top: 1095px;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5) ;
+    border-top: 10px solid #222;
+    background-color: black;
+    color: white;
+}
+
+.section-4 img{
+    width: 305px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+}
+
+.section-4 h1{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    font-size: 3.5rem;
+    width: 70vw;
+    text-align: start;
+    font-weight: bolder;
+    font-family: zalondo, sans-serif;
+    color: white;
+}
+
+.section-4 p{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    font-size: 2rem;
+    width: 70vw;
+    text-align: start;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.96);
+}
+
+/* section 4 end */
+/* section 5 start */
+
+.section-5{
+    height: 550px;
+    width: 100vw;
+    position: relative;
+    top: 1095px;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5) ;
+    border-top: 10px solid #222;
+    background-color: black;
+    color: white;
+}
+
+.section-5 h1{
+    /* position: absolute;
+    top: 20%;
+    left: 50%; */
+    /* transform: translate(-50%, -20%); */
+    font-size: 2rem;
+    width: 100vw;
+    text-align: center;
+    font-weight: bolder;
+    font-family: zalondo, sans-serif;
+    color: white;
+    margin-top: 2.5%;
+}
+
+.section-5-ques{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    background-color: black;
+  }
+  
+  .que{
+    width: 65vw;
+    padding: 20px;
+    border: 1px solid rgba(43, 39, 39, 0.027);
+    margin: 10px 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.308);
+  }
+  .que:hover{
+    background-color: rgba(146, 140, 140, 0.5);
+  }
+
+  .que h3{
+    font-weight: normal;
+    color: #ffffffe0;
+  }
