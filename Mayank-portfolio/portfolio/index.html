@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Your Name</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/portfolio/css/phone.css">
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body,
+      html {
+        height: 100%;
+        scroll-behavior: smooth;
+        color: white;
+        background-image: url(image.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    a{
+      color: white;
+
+    }
+
+    body img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+    
+    
+
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* background: rgba(0, 0, 0, 0.6); */
+        background-image: url(image.png);
+
+        z-index: -1;
+      }
+
+      /* Navbar */
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 10;
+      }
+      nav .logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #ffda00;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        transition: 0.3s;
+      }
+      nav ul li a:hover {
+        color: #ffda00;
+      }
+
+      /* Hero Section */
+      .hero {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+      }
+      .hero h1 {
+        font-size: 4rem;
+        font-weight: 800;
+        animation: fadeDown 2s ease;
+      }
+      .hero h2 {
+        font-size: 1.5rem;
+        margin-top: 10px;
+        color: #ffda00;
+        animation: fadeUp 2s ease;
+      }
+      .hero .btn {
+        margin-top: 30px;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 25px;
+        background: #ffda00;
+        color: black;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .hero .btn:hover {
+        background: #fff;
+        transform: scale(1.1);
+      }
+
+      @keyframes fadeDown {
+        from {
+          opacity: 0;
+          transform: translateY(-40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Projects Section */
+      #projects {
+          /* background: #111; */
+          background-image: url(image2.png);
+        padding: 100px 20px;
+        text-align: center;
+      }
+      #projects h2 {
+        font-size: 2.5rem;
+        margin-bottom: 50px;
+        color: #ffda00;
+      }
+      .project-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        max-width: 1100px;
+        margin: auto;
+      }
+      .project {
+        background: #1c1c1c;
+        border-radius: 15px;
+        padding: 20px;
+        transition: 0.3s;
+      }
+
+      .flex{
+        display: flex;
+        justify-content: center;
+      }
+
+      .project7{
+        position: relative;
+        /* left: 110%; */
+        /* display: flex;
+        flex-direction: column;  */
+      }
+
+
+
+      .project a{
+        color: white;
+        text-decoration: none;
+        text-decoration: underline;
+
+      }
+      
+      .project:hover {
+        transform: translateY(-10px);
+        background: #222;
+      }
+      .project h3 {
+        margin-bottom: 10px;
+        color: #ffda00;
+      }
+      .project p {
+        font-size: 0.95rem;
+      }
+
+      .row-3{ 
+        /* height: auto; */
+        /* background-color: #1c1c1c; */
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+      }
+
+      .seven{
+        width: 33.33%;
+        height: auto;
+        background-color: #1c1c1c;
+        padding-bottom: 40px;
+      }
+      
+
+/* 
+      .git-links a{
+        color: rgb(168, 84, 84);
+        text-decoration: none;
+      } */
+
+      /* .project a:nth-child(4){
+        color: red  ;
+      } */
+
+      /* Contact */
+      #contact {
+        background: #2d2e2d54;
+        text-align: center;
+        padding: 80px 20px;
+      }
+      #contact h2 {
+        color: #ffda00;
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+      #contact p {
+        font-size: 1rem;
+      }
+
+
+/* 
+      footer{
+        width: 100vw;
+        height: 200px;
+        color: #eeab2d;
+
+
+      }
+      .social h1{
+        color: #a39898;
+      } */
+       /* Footer styling */
+#footer {
+  background: linear-gradient(135deg, #1e1e2f, #2c3e50);
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Social heading */
+#footer .social h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffcc00;
+}
+
+/* Links container */
+#footer .links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Individual links */
+#footer .links a {
+  color: #fff;
+  text-decoration: none;
+  background: #34495e;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effects */
+#footer .links a:hover {
+  background: #ffcc00;
+  color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(255, 204, 0, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  #footer .links {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+
+    <div class="overlay">
+
+    </div>
+
+    <!-- Navbar -->
+    <nav>
+      <div class="logo"><a href="#">MyPortfolio</a></div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#footer">footer</a></li>
+        <li><a href="login/index.html">log in</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Mayank Sharma</h1>
+      <h2>Full Stack Web Developer</h2>
+      <a href="#projects"><button class="btn">View My Work</button></a>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="project-container">
+        <div class="project">
+          <h3> Project 1 </h3>
+          <p>Myntra clone using html & css</p>
+          <a href="/MY PROJECTS OF CODING/myntra project/index.html"> click here to open Myntra clone</a>  <br>
+          <a class="git-links" style="color: rgb(61, 218, 204);" href="https://github.com/mayanksharma800680-afk/Myntra-clone" target="_blank"> click here to open Myntra clone code</a>
+        </div>
+        <div class="project">
+          <h3>Project 2</h3>
+          <p>amazon clone using Html & css</p>
+          <a href="/MY PROJECTS OF CODING/amazon clone/index.html">click here to open amazon clone</a> <br>
+          <a class="git-links" style="color: rgb(61, 218, 204);" href="https://github.com/mayanksharma800680-afk/Amazon-clone" target="_blank"> click here to open Amazon clone code</a>
+        </div>
+        <div class="project">
+          <h3>Project 3</h3>
+          <p>Meesho clone using Html & css</p>
+          <a href="/MY PROJECTS OF CODING/meesho clone/index.html">click here to open Meeho clone</a> <br>
+          <a class="git-links" style="color: rgb(61, 218, 204);" href="https://github.com/mayanksharma800680-afk/Meesho-clone" target="_blank"> click here to open Meesho clone code</a>
+        </div>
+        <div class="project">
+          <h3>Project 4</h3>
+          <p>loader using Html & css</p>
+          <a href="/MY PROJECTS OF CODING/loader/loader.html">click here to open loader</a>
+          
+        </div>
+        <div class="project">
+          <h3>Project 5</h3>
+          <p>tic tac toe  using Html & css</p>
+          <a href="/MY PROJECTS OF CODING/using ai/tic tac toe/index.html">click here to open  tic tac toe game</a>
+        </div>
+        <div class="project">
+          <h3>Project 6</h3>
+          <p>program to calculate 1 to n numbers using JS</p>
+          <a href="/MY PROJECTS OF CODING/Program to calclulate 1 to n numbers/index.html">click here to open small calculator</a>
+        </div>
+
+
+
+        </div>
+
+        <div class="row-3">
+          <div class="hypotenuse seven">
+             <h3>Project 7</h3>
+          <p>program to calculate hypotenuse & sides</p>
+          <a href="/MY PROJECTS OF CODING/calculator of calculate hypotenuse/index.html">click here to open hypotenuse Calculator</a>
+          </div>
+          <div class="netflix seven">
+             <h3>Project 8</h3>
+          <p>Netflix Clone using Html & Css</p>
+          <a href="/MY PROJECTS OF CODING/netflix clone/index.html">click here to open Netflix Clone</a> <br>
+          <a style="color: rgb(61, 218, 204);" href="https://github.com/mayanksharma800680-afk/Netflix-Clone-using-Html-Css">click here to open Netflix clone code</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="https://myaccount.google.com/?utm_source=chrome-profile-chooser&pli=1">mayanksharma800680@gmail.com</a> </p>
+    </section>
+    
+    <!-- <footer id="footer">
+      <div class="social"><h1>social media links</h1></div>
+      <div class="links">
+      <a href="https://github.com/mayanksharma800680-afk">github account</a></div>
+      <div class="links">
+      <a href="https://chatgpt.com/mayanksharma800680@gmail.com">chatGpt account</a></div>
+      <div class="links">
+      <a href="https://youtube.com/@MayankSharma-h9z">youtube account</a></div>
+      <a href="https://chatgpt.com/mayanksharma800680@gmail.com">chatGpt account</a></div>
+      <div class="links">
+      <a href="https://facebook.com/@MayankSharma-h9z">youtube account</a></div>
+      <a href="https://chatgpt.com/mayanksharma800680@gmail.com">chatGpt account</a></div>
+      <div class="links">
+      <a href="https://google.com/gmail.com/mayanksharma800680@gmail.com">Gmail account</a></div>
+    </footer>   -->
+    <footer id="footer">
+  <div class="social">
+    <h1>Social Media Links</h1>
+  </div>
+  <div class="links">
+    <a href="https://github.com/mayanksharma800680-afk" target="_blank">GitHub Account</a>
+    <a href="#" target="_blank">VS code Account</a>
+    <a href="#" target="_blank">YouTube Account</a>
+    <a href="#" target="_blank">Facebook Account</a>
+    <a href="#" target="_blank">Gmail Account</a>
+  </div>
+</footer>
+
+  </body>
+</html>
+  

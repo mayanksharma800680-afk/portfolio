@@ -1,0 +1,404 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+html, body {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+.cursor a{
+    color:#270027;
+}
+
+/* it is a class of that elements where cursor is change  */
+
+.cursor{
+    cursor: pointer;
+}
+
+
+header{
+    height: 72px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top:1px solid #cccdcd;
+    border-bottom:1px solid #cccdcd;   
+}
+
+
+#logo img{
+    width: 156px;
+    object-fit: cover;
+}
+#input{
+    width: 46.875%;
+    
+    height: 45px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border: 1px solid #8b8ba3;
+    border-radius: 5px;
+    
+}
+
+#input-icon{
+    width: 20px;
+    height: 20px;
+    scale: 1.5;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+#input-button{
+    flex-grow: 1;
+    margin-left: 5px;
+}
+
+#input-button input{
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+#input-button input:focus{
+    border: none;
+    outline: none;
+}
+
+
+#nav-supplier{
+    width: 60px;
+    
+}
+
+#nav-investor{
+    width: 80px;
+}
+
+/* it is a class of line after supplier & investor */
+
+.nav-lines{
+    width: 2px;
+    height: 40px;
+    background-color: rgb(206, 206, 222);
+}
+
+/* it is a class of supplier,investor,bottom of header items */
+
+    .nav-items{
+        color: rgba(53, 53, 67, 0.979);
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+
+#nav-action{
+    display: flex;
+    color: rgba(53, 53, 67, 0.979);
+}
+
+#profile{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+
+
+
+#cart   {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+}
+
+
+/* it is a class of nav ke action ke icons ki  */
+
+.nav-action-icons{
+    scale: 1.4;
+    align-self: center;
+}
+
+
+
+/* panel start */
+
+#panel{
+    width: 100vw;
+    height: 52px;
+    font-size: 18px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-around;
+    border-bottom:1px solid #cccdcd;
+    padding-right: 15px;
+}
+
+#panel a{
+    text-decoration: none;
+    color: rgba(53, 53, 67, 0.979);
+   margin-top: 18px;
+   font-size: 18px;
+    
+
+}
+
+#panel a:hover{
+    border-bottom: 3px solid rgb(159,32,137);
+}
+
+
+
+/* main */
+
+#banner{
+    background-image: url(https://images.meesho.com/images/marketing/1758547149378.webp);
+    background-size: cover;
+    height: 350px;
+    font-size: 16px;
+}
+
+#banner-heading{
+    font-size: 2.5em;
+    color: white;
+    font-weight: 900;
+    line-height: 50px;
+    position: relative;
+    top: 25%;
+    left: 60%;
+}
+
+#banner-button button{
+    width: 171.5px;
+    height: 60px;
+    background-color: rgb(249, 249, 249);
+    color: rgb(88, 10, 70);
+    font-size: 1.3em;
+    position: relative;
+    top: 120px;
+    left: 60%;
+    border-radius: 8px ;
+
+}
+
+
+#banner-button button:hover{
+    border-radius: 50%;
+    background-color: #33f183;
+}
+
+
+/* heading */
+
+#heading{
+    background-color: #edc9e7be;
+    padding: 5px 8px 5px 8px;
+}
+
+#heading-container{
+    width: 98%;
+    height: 47px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #270027;
+}
+
+.heading-parts{
+    margin-left: 100px;
+    
+}
+
+
+#heading-part-1 {
+    display: flex;
+}
+
+#heading-part-1 img{
+    height: 20px;
+}
+
+
+#heading-part-2 {
+    display: flex;
+}
+
+#heading-part-2 img{
+    height: 20px;
+}
+
+
+#heading-part-3 {
+    display: flex;
+}
+
+#heading-part-3 img{
+    height: 20px;
+}
+
+
+/* row 1 start */
+
+#row-1{
+    width: 100vw;
+    height: 235px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#row-1-container{
+    width: 90%;
+    height: 93.5%;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    justify-content: center;
+}
+
+.row-1-parts{
+    width: 15%;
+    height: 95%;
+}
+
+.row-1-parts img{
+    height: 100%;
+    object-fit: cover;
+    scale: 1.2;
+    margin: 17px;
+}
+
+
+/* bannenr 2 */
+
+#banner2{
+    width: 100vw;
+    height: 516px;
+    background-color: #33f183;
+    margin-top: 40px;
+}
+
+
+
+
+/* footer */
+
+#footer-top{
+    background-color: rgba(228, 228, 255, 0.967);
+    width: 100%;
+    height: 400px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+#footer-top-box{
+    width: 90%;
+    height: 226px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    position: relative;
+    top: 15px;
+    /* box-shadow: inset 20px 20px 20px 5px #bdabab; */
+    box-shadow: -20px -20px 20px 5px #bdabab , inset -20px -20px 100px 5px #08e52373;    
+}
+
+#footer-top-part-1{
+    width: 369px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#part-1-i h2{
+    font-size: 32px;
+}
+
+#part-1-ii p{
+    font-size: 18px;
+}
+
+#part-1-iii{
+    display: flex;
+    justify-content:space-between;
+    padding-bottom: 15px;
+}
+
+#part-1-iii img{
+    width: 176px;
+    
+    height: 50px;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+/* it is a class of footer-top-part-2,3 */
+.footer-top-part-23{
+    width: 138px;
+    height: 186px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+
+.footer-text{
+    color: #616173;
+    font-size: 18px;
+}
+
+#footer-top-part-3{
+    width: 163px;
+    height: 186px;
+}
+#footer-top-part-4{
+    width: 205px;
+    height: 226px;
+}
+
+#footer-top-part-4-ii{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5px 0px 3px;
+}
+
+.part-4-ii-parts img{
+    width: 24px;
+}
+
+#footer-top-part-5{
+    width: 257px;
+    height: 226px;  
+}
+
+#footer-top-part-5-2 {
+    font-size: 12px;
+    margin-top: 10px;
+    line-height: 20px;
+    letter-spacing: 1px ;
+}

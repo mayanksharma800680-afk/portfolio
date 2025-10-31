@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra bag </title>
+    <style>
+        .first{
+            background-color: rgba(144, 238, 144, 0.5);
+            padding: 10px 25px;
+            border-radius: 20px;
+            font-size: 15px;
+
+        }
+        .second{
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <button class="first" onclick="cartQuantity ++; 
+    document.querySelector('#cart-summary').innerText = `your bag has been ${cartQuantity} items ` ; ">Added to bag</button>
+    <button class="second" onclick="cartQuantity --; document.querySelector('#cart-summary').innerText = `your bag has been ${cartQuantity} items `">MOVE TO WISHLIST</button>
+    <button class="first" onclick="cartQuantity += 2; document.querySelector('#cart-summary').innerText = ` your bag has been ${cartQuantity} items `"  >add 1+1 sale item</button>
+
+    <h1 id="cart-summary"></h1>
+
+    <script>
+
+        let cartQuantity = 0;
+
+        // innerhtml bhi se kr skate ahi
+    document.querySelector('#cart-summary').innerText = `your bag has been ${cartQuantity} items ` ; 
+
+    // it is another way to write upper code
+    // document.querySelector('#cart-summary').innerText = "your bag has been " + cartQuantity + " items"; 
+
+    </script>
+</body>
+</html>
