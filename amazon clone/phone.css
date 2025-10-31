@@ -1,0 +1,74 @@
+/* header */
+
+@media screen and (max-width: 1000px) {
+    .responsive{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    #first-row{
+        flex-wrap: wrap;
+    }
+    #nav-input{
+        /* width: 70vw; */
+        background-color: royalblue;
+    }
+    #nav-select{
+        width: 50px;
+    }
+    #search-icon{
+        width: 40px;
+    }
+    #panel{
+        height: 80px;
+    }
+    #hero-section{
+        height: 150vh;
+    }
+    #firt-row{
+            padding-top: 50px;    
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #nav-logo img{
+    width: 70px;
+    }
+    
+}
+
+@media screen and (max-width: 520px) {
+    #panel{
+        height: 120px;
+    }
+    
+}
+
+
+@media screen and (max-width: 400px) {
+    #panel{
+        height: 16  0px;
+    }
+    
+}
+
+@media screen and (max-width: 750px) {
+    #hero-section{
+        height: 200%;
+    }
+    
+}
+
+@media screen and (min-height: 1100px) {
+    #hero-section{
+        height: 1250px;
+    }
+    
+}
+@media screen and (min-height: 950px) {
+    #hero-section{
+        height: 1100px;
+    }
+    
+}
